@@ -9,3 +9,4 @@ Invoke-RestMethod -Uri https://aka.ms/vs/17/release/vs_buildtools.exe -OutFile v
 Start-Process -FilePath vs_buildtools.exe -ArgumentList "--add", "Microsoft.VisualStudio.Component.VC.Tools.x86.x64", "--add", "Microsoft.VisualStudio.Component.Windows10SDK.19041", "--norestart", "--passive", "--wait" -Wait -PassThru
 Remove-Item vs_buildtools.exe
 ```
+3. You should now have "Developer PowerShell ..." in both Windows Start Menu and in Terminal
