@@ -1,6 +1,6 @@
 # install-cl
 
-Guide to install cl.exe for Windows from PowerShell.
+Guide to install Visual Studio Build Tools (including C compiler cl.exe) for Windows from PowerShell.
 
 1. Start `PowerShell` (e.g. by opening Windows Menu and search for Windows PowerShell)
 2. Copy / paste the following lines:
