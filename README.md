@@ -2,11 +2,15 @@
 
 Guide and script to install cl.exe for Windows from the Terminal.
 
-## Install git
+## Short version
 
-1. Go to https://git-scm.com/download/win
-2. Click "64-bit Git for Windows Setup."
-3. Run the .exe and follow the instructions
+If you have already set up running remote scripts and know how profiles in the Terminal works, just run this command in a PowerShell:
+
+```
+Invoke-Expression $(Invoke-RestMethod https://raw.githubusercontent.com/saikyun/install-cl/main/install-build-tools.ps1)
+```
+
+Otherwise, keep reading.
 
 ## Setup Terminal
 
@@ -34,11 +38,9 @@ As an alternative, you can just copy / paste the contents of the .ps1 scripts me
 ## Clone repo and install build tools
 
 1. Open Terminal
-2. Run the following commands:
+2. Run the following command:
 ```
-git clone https://github.com/saikyun/install-cl
-cd install-cl
-.\install-build-tools.ps1
+Invoke-Expression $(Invoke-RestMethod https://raw.githubusercontent.com/saikyun/install-cl/main/install-build-tools.ps1)
 ```
 3. When the script is done, you should have new profiles in your Terminal  \
    Click the menu arrow, and click "Developer PowerShell for VS 2022"
